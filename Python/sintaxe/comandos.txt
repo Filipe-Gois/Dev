@@ -1,0 +1,19 @@
+string: '' ou ""
+'' é mais usado
+
+print(): escreva
+print('7' + '4') = retorna 74, pois junta os dois textos
+print(7 + 4) = retorna o resultado da expressão, 11
+
+pode usar "," no lugar do "+", dependedo da situação, um fica melhor que o outro
+print('Olá' + 5) = dá erro
+print('Olá' , 5) = não dá erro
+
+
+
++
+-
+*
+/
+** exponenciação
+% modular(resto de divisão)
