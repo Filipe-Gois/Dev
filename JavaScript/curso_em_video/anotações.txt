@@ -1,0 +1,80 @@
+var = null
+"delimitar valor nulo para uma variável"
+
+strings:
+{
+var1 = "Filipe"    ASAS DUPLAS
+
+var2 = 'Filipe'    ASPAS SIMPLES
+
+var3 = `Filip`     CRASE
+
+
+tem diferença entre elas
+}
+
+
+identificador = nome das variáveis
+podem começar com "letra","$" ou "_"
+n podem começar com números
+possivel usar letras ou numeros
+possivel usar acentos e simbolos
+n pode conter espaço
+n podem ser palavras reservadas
+
+
+
+javascript n separa numeros inteiros de fracionários (	todos são considerados 'number')
+
+
+typeof: mostra de qual tipo é a variável
+{} ou [] são considerados objetos pelo "typeof"
+
+null é considerado um objeto
+
+
+interpolação:
+usar crase `e símbolo $ na hora de interpolar
+window.alert(`É um grande prazer te conhecer, ${nome}.`);
+
+
+
+
+
+
+string>number:
+
+Number.parserInt()  transforma em inteiro
+var n1 = Number.parseFloat(window.prompt('Digite um número:'));
+
+ou
+
+var n1 = Number(Window.prompt('Digite um número:'));
+dá para usar só o "Number) para o JavaScript identificar que é um número, independente de ser int ou float
+
+
+
+
+
+number>string:
+
+String(n) "usar igual o number"
+
+ou
+
+n.ToString()
+
+
+
+document.Write: escreve na página da web
+
+
+.toFixed(2)   formatar número
+exemplo:  1545.3.toFixed(2) = 1545.30
+arredonda as casas decimais
+
+
+
+trocar "." para ",":
+
+.replaca('.' , ',')
