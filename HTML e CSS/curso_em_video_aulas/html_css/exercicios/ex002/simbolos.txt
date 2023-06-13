@@ -1,0 +1,15 @@
+&reg; ®  
+
+&copy;  ©
+
+&trade;  ™ 
+
+&euro;   € 
+
+&pound;  £
+
+&cent;  ¢ 
+
+&Delta;  Δ 
+
+&uparrow;  ↑

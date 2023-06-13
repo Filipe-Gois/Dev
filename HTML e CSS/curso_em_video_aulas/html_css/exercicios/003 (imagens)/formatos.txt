@@ -1,0 +1,18 @@
+na web: geralmente se usa png e jpeg
+
+JPEG: compactar imagem
+
+png: permite transparência
+
+
+tamanho de arquivo:
+width; o máximo 1500
+
+
+não sobrescrever imagens na hora de salvar
+
+
+usar o gimp ou qualquer ou outro photoshop para redimensionar e deixar a imagem menos pesada
+
+
+*CSS DÁ P REDIMENSIONAR IMAGEM, MAS N MUDA O TAMANHO DO ARQUIVO!!*

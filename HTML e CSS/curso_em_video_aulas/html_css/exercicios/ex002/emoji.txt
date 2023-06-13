@@ -1,0 +1,14 @@
+usar emojipedia
+
+copiar e colar o simbolo no html
+
+
+RECOMENDADO: copiar o código do emoji:
+
+Codepoints
+😀 U+"1F600"
+
+
+no html:
+
+&#x1F600
