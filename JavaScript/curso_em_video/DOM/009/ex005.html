@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(25, 138, 231);
+            color: white;
+            font: normal 20pt arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Iniciando os estudos DOM:</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM </strong>em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+
+        //selecionando por TAG: 
+
+        // var corpo = document.body;
+
+        // var p1 = window.document.getElementsByTagName('p')[1];  //os colchetes com o índice indica qual parágrafo está sendo pego, no  caso, o primeiro
+
+        // window.document.write(`Está escrito assim: ${p1.innerHTML}`);  //não é a melhor maneira de se adicionar componentes, mas é a mais simples
+
+        // // p1.innerHTML: traz todo o texto formato, tendo o strong também
+
+        // corpo.style.background = 'black';
+
+        // p1.style.color = 'red';
+
+        // // window.alert(p1.innerText);
+
+
+
+
+
+        //Selecionando por ID
+
+        // var d = document.getElementById('msg');
+
+        // d.style.background = 'green';
+        // d.innerText = 'Estou aguardando';  //Isso altera o conteúdo de um texto com Javascript
+
+
+
+        // Selecionando por NOME
+
+        // var d = window.document.getElementsByName('msg')[0];
+
+        // d.innerText = 'Olá.';
+
+        // window.document.getElementsByClassName
+
+
+        // Seletor:
+
+        var dd = document.querySelector('div#msg');
+
+        dd.style.background = 'blue';
+        
+
+
+    </script>
+</body>
+
+</html>

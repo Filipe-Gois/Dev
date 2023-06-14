@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area {
+            background-color: green;
+            font: normal 20pt arial;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"    || isso ia junto com o ID da div, mas o listener mudou isso-->
+    <div id="area"> <!--no lugar de usar isso e deixar o code mt poluído, dá p usar os listeners no JS-->
+        Interaja...
+    </div>
+
+    <script>
+        var a = document.getElementById('area');
+
+        // a ligação entre o html e o JS se dá por essas 3 linhas, que correspondem ao eventlistener
+        a.addEventListener('click', clicar);
+        a.addEventListener('mouseenter', entrar);
+        a.addEventListener('mouseout', sair)
+
+
+        function clicar() {
+
+            a.innerText = 'Clicou';
+            a.style.background = 'red';
+        }
+
+        function entrar() {
+            a.innerText = 'ENTROU';
+        }
+
+        function sair() {
+            a.innerText = 'Saiu';
+            a.style.background = 'green';
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+Document Object Model: é um conjunto de objetos, dentro do navegador, que vai dar acesso à componentes internos do web site
+
+Árvore DOM:
+começa da raíz, que é a window
+
+        	window
+
+location      	document      history
+
+		 html
+	head		body
+
+meta 	title
+
+
+parent: pai
+exemplo: html é parent de body, mas é child de document
+
+
+child: filho
+body é child de html
+
+
+
+
+métodos de acesso dos elementos da árvore DOM:
+
+por MARCA;
+por ID;
+por NOME;
+por CLASSE;
+por SELETOR
+
+USAR [] QUANDO HOUVER MAIS DE UM OBJETO, GERALMENTE USADO em "MARCA" E "NOME"
+
+
+marca:
+getElementsByTagName()   dá para selecionar mais de um    (só pega as tags da semântica html, como DIV, P, ARTICLE, etc.)
+
+
+
+ID:
+getElementByid()
+
+pega elementos pelo id "#"
+
+
+
+
+CLASSE:
+getElementsByClassName()
+
+pega elementos pela classe "."
+
+
+
+nome:
+getElementsByName()
+
+*CREIO que será mais usado com formulários*
+
+
+
+Seletor:
+recomendável pela maioria dos manuais
+*faz seleção por elementos CSS*
+
+querySelector()       
+querySelectorAll()    (é o plural)
+
+
+exemplo:
+var dd = document.querySelector('div#msg');
+
+
+
+(mais prático para fazer alterações rápidas no site)
+* é o métdo mais recente, logo, navegadores mais antigos não reconhecerão*
+
+
+*GETELEMENTS != GETELEMENT*

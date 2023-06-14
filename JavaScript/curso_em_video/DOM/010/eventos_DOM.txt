@@ -1,0 +1,30 @@
+Eventos: todo que possa acontecer com qualquer elemento 
+(mais comuns são eventos de mouse *passar o mouse por cima da div (mouseenter) ou ficar mexendo o mouse por dentro dela (mousemove), clicar e segurar(mousedown), momento em que solta o mouse(mouseup), apertar e soltar rapidamente(click), mover o mouse para fora(mouseout)
+
+
+Lista de todos os eventos possíveis: https://developer.mozilla.org/en-US/docs/Web/Events
+
+
+Função: conjunto de linhas executadas só quando o evento ocorrer
+
+function ação(parâmetros){
+bloco
+}
+
+função anônima: função sem nome
+
+eventos podem ser configurados na parte html ou no Javascrip, vai de você escolher.
+
+
+
+
+Listers:
+
+
+
+
+
+Como descobrir se há algum erro no seu code JS:
+dar inspect na página do google
+olhar o símbolo vermelho no lado superior direito do console
+ele irá mostrar qual o erro e sua respectiva linha 
