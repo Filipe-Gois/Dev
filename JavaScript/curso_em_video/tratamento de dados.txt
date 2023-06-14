@@ -76,5 +76,14 @@ arredonda as casas decimais
 
 
 trocar "." para ",":
-
+{
 .replaca('.' , ',')
+}
+
+
+
+usar unidade monetária:
+{
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})
+}

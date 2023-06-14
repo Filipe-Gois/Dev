@@ -1,0 +1,108 @@
+operadores aritméticos:
+precedência dos operadores:
+
+1) ()
+2) **
+3) */%
+
+
+
+operadores de atribuição:
+
+Exemplo:
+Var a = 5+3 = 8
+Var b = a% 5 = 3
+Var c = 5* b ** 2 = 45
+Var d = 10 – a / 2 = 6
+Var e = 6 * 2 / d = 2
+Var f = b % e + 4 / e = 3
+
+
+auto-atribuição:
+var n = 3
+n = n + 4
+n = 7
+
+
+dica:
+n += 4
+n recebe seu valor mais 4
+
+é uma simplificação da auto-aatribuição
+
+
+operador de incremento (burro, é a mesma coisa do i++ que você usava no laço "for"):
+var x = 5
+x = x + 1
+
+ou (com operador de incremento)
+
+x++  (igual com o contador que o careca do Senas passou)
+
+
+
+operador de identidade ou igualdade restrita:
+
+usado com ===     
+
+5==='5' -> false
+
+está testando se os dois 5 são IDÊNTICOS, precisando ter mesmo valor e mesmo tipo, no qual, o exemplo não atende aos requisitos, por isso dá false
+
+5===5 -> true
+
+
+(dá para traduzir como: 5 é idêntico à 5 ?)
+
+
+
+ou
+
+!== (lido como: desigual restrito. É o oposto do ===)
+
+
+
+
+precedência de todos os operadores:
+
+()*8/
+> < >=
+!
+&&
+||
+
+
+
+
+
+Operador ternário:
+
+utiliza-se "?" e ":"
+
+recebe o nome de ternário pq é dividido em três partes
+
+teste ? true : false
+
+teste: é oq retorna um valor true ou false
+
+parte do meio: o que irá ocorrer caso o teste seja true
+
+parte do final; o que irá ocorrer caso o teste seja false
+
+
+exemplo:
+{
+> var media = 5.5
+undefined
+> media > 7 ? 'Aprovado' : 'Reprovado'
+'Reprovado'
+
+
+
+
+> var x = 8
+undefined
+> var RES = x % 2 == 0 ? 5 : 9
+
+se o modular de 8/2for 0, a variável RES vai receber 5, caso não seja (else) receberá 9
+} 
