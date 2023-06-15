@@ -1,0 +1,10 @@
+condição aninhada: uma condição dentro da outra (if dentro de if)
+
+
+// como pegar a hora atual do sistema
+
+var agora = new Date()
+var hora = agora.getHours()
+
+
+condição múltipla
