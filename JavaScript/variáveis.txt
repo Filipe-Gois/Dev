@@ -1,0 +1,13 @@
+var = usado em variáveis globais
+podem ser usadas mesmo depois de sua declaração
+exemplo:
+var exibeMensagem = function() { 
+    mensagem = 'Alura'; 
+    console.log(mensagem); 
+    var mensagem;
+}
+
+
+
+let = usado em variáveis locais
+só podem ser utilizadas após sua declaração

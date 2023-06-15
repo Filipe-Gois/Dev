@@ -1,0 +1,15 @@
+C:\Users\fytho\OneDrive\Área de Trabalho\teste1\bin\Debug\net7.0\teste1.exe
+C:\Users\fytho\OneDrive\Área de Trabalho\teste1\bin\Debug\net7.0\teste1.deps.json
+C:\Users\fytho\OneDrive\Área de Trabalho\teste1\bin\Debug\net7.0\teste1.runtimeconfig.json
+C:\Users\fytho\OneDrive\Área de Trabalho\teste1\bin\Debug\net7.0\teste1.dll
+C:\Users\fytho\OneDrive\Área de Trabalho\teste1\bin\Debug\net7.0\teste1.pdb
+C:\Users\fytho\OneDrive\Área de Trabalho\teste1\obj\Debug\net7.0\teste1.csproj.AssemblyReference.cache
+C:\Users\fytho\OneDrive\Área de Trabalho\teste1\obj\Debug\net7.0\teste1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fytho\OneDrive\Área de Trabalho\teste1\obj\Debug\net7.0\teste1.AssemblyInfoInputs.cache
+C:\Users\fytho\OneDrive\Área de Trabalho\teste1\obj\Debug\net7.0\teste1.AssemblyInfo.cs
+C:\Users\fytho\OneDrive\Área de Trabalho\teste1\obj\Debug\net7.0\teste1.csproj.CoreCompileInputs.cache
+C:\Users\fytho\OneDrive\Área de Trabalho\teste1\obj\Debug\net7.0\teste1.dll
+C:\Users\fytho\OneDrive\Área de Trabalho\teste1\obj\Debug\net7.0\refint\teste1.dll
+C:\Users\fytho\OneDrive\Área de Trabalho\teste1\obj\Debug\net7.0\teste1.pdb
+C:\Users\fytho\OneDrive\Área de Trabalho\teste1\obj\Debug\net7.0\teste1.genruntimeconfig.cache
+C:\Users\fytho\OneDrive\Área de Trabalho\teste1\obj\Debug\net7.0\ref\teste1.dll
