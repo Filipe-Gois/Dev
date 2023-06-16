@@ -7,4 +7,33 @@ var agora = new Date()
 var hora = agora.getHours()
 
 
-condição múltipla
+condição múltipla (switch)
+
+possibilidade de diversos valores além do "sim" e "não"
+
+switch (expressão) {
+
+case valor 1:
+
+break;
+
+case valor 2:
+
+break;
+
+case valor 3:
+
+break;
+
+default:
+
+break;
+"caso nenhum outro atenda"
+}
+
+
+
+switch (mês.toUpperCase()) { // O método toUpperCase() transforma todas as letras de uma string para maiúsculas
+        case 'JANEIRO': case 'FEVEREIRO': case 'MARÇO': // Podemos testar múltiplos casos em uma mesma linha, desse jeito
+            estação = 'INVERNO'
+            break // Nunca se esqueça do break!!!

@@ -11,3 +11,9 @@ var exibeMensagem = function() {
 
 let = usado em variáveis locais
 só podem ser utilizadas após sua declaração
+
+
+ A diferença entre elas está no escopo e na mutabilidade. 
+var tem escopo de função, enquanto let e const têm escopo de bloco. 
+Além disso, as variáveis declaradas com const são imutáveis, 
+enquanto as declaradas com let podem ser alteradas.

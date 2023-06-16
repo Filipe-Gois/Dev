@@ -9,6 +9,7 @@
         body {
             font: 20pt normal arial;
         }
+
         input {
             font: normal 20pt arial;
             width: 100px;
@@ -21,10 +22,20 @@
     <input type="number" name="txtn1" id="txtn1"> +
     <input type="number" name="txtn2" id="txtn2">
     <input type="button" value="somar" onclick="somar()">
+    <input type="button" value="somarsayu" onclick="add()">
     <div id="res">Resultado</div>
 
 
     <script>
+
+        // adicionando imagem com JS
+        function add() {
+            var res1 = document.querySelector('div#res')
+
+            res1.innerHTML = `<img width="500px" src="tela lua azul.jpg" alt="">`
+        }
+
+
 
         function somar() {
             var tn1 = window.document.getElementById('txtn1');
@@ -36,8 +47,8 @@
             var n2 = Number(tn2.value)
 
             var s = n1 + n2;
-            
-            res.innerHTML = `A soma entre ${n1} e ${n2} é ${s}` ;
+
+            res.innerHTML = `A soma entre ${n1} e ${n2} é ${s}`;
         }
     </script>
 
