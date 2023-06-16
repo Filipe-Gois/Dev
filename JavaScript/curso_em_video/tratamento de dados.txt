@@ -7,7 +7,7 @@ var1 = "Filipe"    ASAS DUPLAS
 
 var2 = 'Filipe'    ASPAS SIMPLES
 
-var3 = `Filip`     CRASE
+var3 = `Filipe`     CRASE
 
 
 tem diferença entre elas
@@ -44,7 +44,7 @@ window.alert(`É um grande prazer te conhecer, ${nome}.`);
 
 string>number:
 
-Number.parserInt()  transforma em inteiro
+Number.parseInt()  transforma em inteiro
 var n1 = Number.parseFloat(window.prompt('Digite um número:'));
 
 ou

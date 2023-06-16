@@ -1,3 +1,41 @@
+function clicar()
+{
+
+let btn = document.getElementById('btn')
+
+let num = Number(prompt('Informe um número:'))
+
+alert(`O antecessor de ${num} é ${num - 1} e seu sucessor é ${num + 1}`)
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // desafio ano bissexto
