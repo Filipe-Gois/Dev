@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        #relatorio {
+            background-color: rgb(25, 25, 173);
+            width: 300px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            padding: 20px;
+            color: rgb(138, 95, 54);
+            font-size: 20px;
+        }
+        #relatorio:hover {
+            transition: all .2s ease-in-out;
+            box-shadow: 0px 10px 15px 20px rgb(114, 112, 112);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+
+        <input type="text" placeholder="Insira seu nome:" id="nome">
+        <input type="number" placeholder="Informe sua idade:" id="idade">
+        <input type="text" placeholder="Qual linguagem você está aprendendo?" id="linguagem">
+
+        <!-- ao ser clicado, o botão executará a função add() -->
+        <input type="button" onclick="add()" id="btn">
+    </form>
+
+    <div id="relatorio">
+        <p>Lorem ipsum dolor sit amet consectetur, adi?</p>
+
+    </div>
+    <script>
+
+        function add() {
+
+            // var btn = document.getElementById('btn')
+
+            // btn.addEventListener('click', add())
+
+            var nome = document.getElementById('nome');
+            var idade = document.getElementById('idade');
+            var linguagem = document.getElementById('linguagem');
+
+            // vc é obrigado a atribuir o "nome"( ou qlqr outra variável) à outra variável, se n, dá erro.
+
+            var n = nome.value
+            var idadeR = Number(idade.value)
+            var l = linguagem.value
+
+
+
+
+
+            var res = document.getElementById('relatorio')
+
+            res.innerText = `Seu nome: ${n}, sua idade: ${idadeR}, sua linguegem: ${l}`
+            // utilizamos o método ".innerText" para inserir um texto em algum lugar
+        }
+    </script>
+</body>
+
+</html>
