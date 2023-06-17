@@ -1,0 +1,15 @@
+Use <sup> para expoentes ou textos sobrescritos, e <sub> para índices ou subscritos.
+
+Windows<sup>xp</sup> geraria: Windowsxp
+
+e
+
+H<sub>2</sub>O geraria: H2O
+
+Você pode usar praticamente qualquer tag de formatação entre a abertura e o fechamento das tags <sup> ou <sub>. Por exemplo:
+
+e<sup><font color=orange>xp</font></sup>lorando e aprendendo
+
+Que resulta: em explorando e aprendendo
+
+Não há diferença entre colocar a tag <font> dentro ou fora do par <sup></sup> (ou <sub></sub>, se fosse o caso).

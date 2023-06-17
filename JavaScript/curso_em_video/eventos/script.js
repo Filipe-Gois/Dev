@@ -44,7 +44,7 @@ function addEventos() {
     x.addEventListener("mouseover",cor1)
     x.addEventListener("mouseout",cor2)
 }
-// 'loud' só adiciona os eventos quando o conteúdo da página está carregado
+// 'load' só adiciona os eventos quando o conteúdo da página está carregado
 window.addEventListener('load', addEventos);
 
 

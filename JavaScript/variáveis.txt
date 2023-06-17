@@ -1,3 +1,5 @@
+Var: escopo global(mesmo q atribua dentro de um IF, ainda pode ser usada em qualquer outro lugar)
+
 var = usado em variáveis globais
 podem ser usadas mesmo depois de sua declaração
 exemplo:
@@ -12,8 +14,15 @@ var exibeMensagem = function() {
 let = usado em variáveis locais
 só podem ser utilizadas após sua declaração
 
+Let: escopo de bloco, por exemplo: atribuindo dentro de um IF, ela n poderia ser usada em outro bloco.
+
+
 
  A diferença entre elas está no escopo e na mutabilidade. 
 var tem escopo de função, enquanto let e const têm escopo de bloco. 
 Além disso, as variáveis declaradas com const são imutáveis, 
 enquanto as declaradas com let podem ser alteradas.
+
+
+
+
