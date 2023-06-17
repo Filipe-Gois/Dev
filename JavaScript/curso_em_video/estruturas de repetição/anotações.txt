@@ -1,1 +1,3 @@
 while: teste lógico no início. (faz o teste, sendo verdadeiro, ele executa o bloco)
+
+Do While: Teste lógico no final (o bloco é executado primeiro, só após isso o teste é feito)
