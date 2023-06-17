@@ -1,0 +1,1 @@
+while: teste lógico no início. (faz o teste, sendo verdadeiro, ele executa o bloco)
