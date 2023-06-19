@@ -1,0 +1,5 @@
+exemplo de declaração: 
+let num = [5, 8, 9, 11]
+
+elemento: 5 8 9 11
+índice:   0 1 2 3
