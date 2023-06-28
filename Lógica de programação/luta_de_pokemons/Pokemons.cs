@@ -2,51 +2,52 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using luta_de_pokemons;
 
 namespace luta_de_pokemons
 {
+
     public class Pokemons
     {
+
+        // tá dando erro ao instanciar
+        // Menu menu = new Menu();
         public string? nomeJogador { get; set; }
-        public string? nomePokemon { get; set; } = "";
-        public int vida { get; set; } = 0;
-        public int atk { get; set; } = 0;
-        public int cura { get; set; } = 0;
+        public int jogadorVida { get; set; }
+        public int jogadorVidaMaxima { get; set; }
+        public int jogadorCura { get; set; }
+        public int jogadorAtk { get; set; }
+
+        public string? nomePokemon { get; set; }
 
 
-        // public Pokemons Hypno()
-        // {
 
-        //     this.nomePokemon = "Hypno";
-        //     this.vida = 300;
-        //     this.atk = 50;
-        //     return Hypno();
-        // }
+        public string? vilaoNome { get; set; } = "Snorlax";
+        public int vilaoVida { get; set; } = 350;
+        public int vilaoVidaRestante { get; set; }
+        public int vilaoCuraMaxima { get; set; } = 350;
+        public int vilaoCura { get; set; } = 60;
+        public int vilaoAtk { get; set; } = 30;
 
-        // public Pokemons Psyduck()
-        // {
-        //     this.nomePokemon = "Psyduck";
-        //     this.vida = 150;
-        //     this.atk = 30;
-        //     return Psyduck();
-        // }
 
-        // public Pokemons Espeon()
-        // {
-        //     this.nomePokemon = "Espeon";
-        //     this.vida = 200;
-        //     this.atk = 40;
-        //     return Espeon();
-        // }
-
-        public Pokemons SnorlaxVilao()
+        public int Curar()
         {
-            this.nomePokemon = "Snorlax";
-            this.vida = 350;
-            this.atk = 60;
-            return SnorlaxVilao();
+            int vidaTotal = jogadorCura + jogadorVida;
+
+            return vidaTotal;
         }
 
+        public int vilaoAtacar()
+        {
+           int jogadorvidaRestante = jogadorVida - vilaoAtk;
+            return jogadorvidaRestante;
+        }
+
+        public int jogadorAtacar()
+        {
+            vilaoVidaRestante = vilaoVida - jogadorAtk;
+            return vilaoVidaRestante;
+        }
 
     }
 }
