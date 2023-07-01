@@ -75,7 +75,7 @@ var dd = document.querySelector('div#msg');
 
 
 (mais prático para fazer alterações rápidas no site)
-* é o métdo mais recente, logo, navegadores mais antigos não reconhecerão*
+* é o métdo mais atual, logo, navegadores mais antigos não reconhecerão*
 
 
 *GETELEMENTS != GETELEMENT*
