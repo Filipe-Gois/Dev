@@ -44,7 +44,7 @@ else if (hora >= 12 && hora < 18)
 function addEventos()
 {
     // tentar achar um jeito de colocar o 'click' como 'load'
-    document.querySelector('#msg').addEventListener('mouseover', carregar)
+    document.querySelector('#body').addEventListener('load', carregar)
 }
 
 window.addEventListener('load', addEventos);
