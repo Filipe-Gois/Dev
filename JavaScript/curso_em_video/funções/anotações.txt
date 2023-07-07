@@ -1,0 +1,5 @@
+dá p atribuir funções à variáveis.
+
+arrow function: usa o sinal =>
+
+recursividade: dá p criar funções que chamam elas mesmas dentro do escopo "exemplo5"

@@ -47,4 +47,5 @@ function addEventos()
     document.querySelector('#body').addEventListener('load', carregar)
 }
 
-window.addEventListener('load', addEventos);
+// não sei pq o 'click' deu certo, só sei que funciona kkkkkkkkkkkkk
+window.addEventListener('click', addEventos);

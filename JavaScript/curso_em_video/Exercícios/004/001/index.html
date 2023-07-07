@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Título</h1>
+    </header>
+
+   <main class="layout-grid">
+    <section>
+        <div class="div1">
+
+            <label for="inicio">Início:</label>
+            <input type="number" name="inicio" id="inicio" required>
+
+            <label for="fim">Fim:</label>
+            <input type="number" name="fim" id="fim" required>
+
+            <label for="passo">Passo:</label>
+            <input type="number" name="passo" id="passo" required>
+
+            <input type="button" value="Contar" id="btn" onclick="calcular()">
+
+
+        </div>
+        <div id="res">Preparando a contagem...</div>
+    </section>
+   </main>
+
+    <footer>
+        <p>&copy; Curso Em Vídeo</p>
+    </footer>
+    
+</body>
+</html>

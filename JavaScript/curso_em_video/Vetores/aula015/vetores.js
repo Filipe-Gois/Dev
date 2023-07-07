@@ -1,9 +1,10 @@
 let num = [5,8,4]
 
 
-// adicionar valor:
+// adicionar valor "6" no índice 3:
 num[3] = 6
-num.push(9)
+
+
 // adicionar valor na última posição:
 num.push(7)
 
@@ -26,7 +27,6 @@ num.sort()
 
 
 // como exibir o vetor:
-
 // for (let i = 0; i < num.length; i++) {
 //     console.log(`A posição ${i} tem o valor: ${num[i]}`)
     
