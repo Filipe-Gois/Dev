@@ -12,8 +12,7 @@ Listar livros: O sistema deverá exibir a lista completa de livros cadastrados, 
 
 Regras adicionais:
 
-O sistema deve ser implementado em uma linguagem de programação de sua escolha.
 Utilize estruturas de dados adequadas para armazenar as informações dos livros e gerenciar os empréstimos.
 Implemente tratamento de erros para evitar falhas durante a execução do programa.
-O programa deve apresentar um menu que permita ao usuário escolher entre as operações disponíveis e sair do sistema quando desejar.
+O programa deve apresentar um menu que permita ao usuário escolher entre as operações disponíveis e sair do sistema quando desejar. ok
 Esse exercício envolve diversas habilidades de lógica de programação, como manipulação de strings, estruturas de dados, iterações, controle de fluxo, funções e tratamento de erros. Lembre-se de dividir o problema em partes menores para facilitar a implementação e garantir que o sistema funcione corretamente.
