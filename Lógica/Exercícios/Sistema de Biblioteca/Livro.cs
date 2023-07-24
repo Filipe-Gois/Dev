@@ -7,16 +7,18 @@ namespace Sistema_de_Biblioteca
 {
     public class Livro
     {
-        public string? titulo { get; set; }
-        public string? autor { get; set; }
-        public string? anoPublicacao { get; set; }
+        // public string? titulo { get; set; }
+        // public string? autor { get; set; }
+        // public string? anoPublicacao { get; set; }
         public int numeroExemplares { get; set; }
-        public List<Livro>? livros { get; set; }
+        public List<string>? titulo { get; set; }
+        public List<string>? autor { get; set; }
+        public List<string>? anoPublicacao { get; set; }
         public void Cadastrar(string Titulo, string Autor, string AnoPublicacao, int NumeroExemplares)
         {
-            titulo = Titulo;
-            autor = Autor;
-            anoPublicacao = AnoPublicacao;
+            titulo.Add(Titulo);
+            autor.Add(Autor);
+            anoPublicacao.Add(AnoPublicacao);
             numeroExemplares = NumeroExemplares;
 
             Console.WriteLine($"Informe o título do livro:");
@@ -34,9 +36,7 @@ namespace Sistema_de_Biblioteca
         }
         public void Pesquisar(string Titulo, string Autor, string AnoPublicacao)
         {
-            Titulo = titulo;
-            Autor = autor;
-            AnoPublicacao = anoPublicacao;
+            
 
 
         }
