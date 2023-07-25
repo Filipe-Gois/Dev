@@ -17,6 +17,7 @@ do
 [5] - Listar livros
 [0] - Sair");
 
+
     escolha = Console.ReadLine()!;
 
 
@@ -39,7 +40,7 @@ do
             break;
 
         case "5":
-            livro.ListarLivros();
+            livro.imprimirLivro();
             break;
 
         case "0":
