@@ -15,7 +15,8 @@ namespace Sistema_de_Biblioteca
         public string? autor { get; set; }
         public string? anoPublicacao { get; set; }
         public string? resp { get; set; }
-        // public string? resp2 { get; set; }
+        public string? resp2 { get; set; }
+        public Livro livroBuscado { get; set; }
 
         public List<Livro>? livroLista { get; set; } = new List<Livro>();
 
@@ -51,7 +52,7 @@ namespace Sistema_de_Biblioteca
             livroLista.Add(new(titulo, autor, anoPublicacao, numeroExemplares));
 
         }
-        public void Pesquisar(string Titulo, string Autor, string AnoPublicacao)
+        public void Pesquisar()
         {
 
             do
@@ -65,8 +66,7 @@ namespace Sistema_de_Biblioteca
 
             } while (resp != "1" && resp != "2" && resp != "3");
 
-            string resp2;
-            Livro livroBuscado;
+
 
             switch (resp)
             {
@@ -79,18 +79,11 @@ namespace Sistema_de_Biblioteca
 
                     if (livroBuscado != null)
                     {
-
-                        foreach (var item in livroLista)
-                        {
-                            Console.WriteLine(@$"
-                    Livro: {item.titulo}
-                    Autor: {item.autor}
-                    Ano de publicação: {item.anoPublicacao}
-                    Número de exemplares: {item.numeroExemplares}");
-                        }
-
-
-
+                        Console.WriteLine(@$"
+                    Livro: {livroBuscado.titulo}
+                    Autor: {livroBuscado.autor}
+                    Ano de publicação: {livroBuscado.anoPublicacao}
+                    Número de exemplares: {livroBuscado.numeroExemplares}");
                     }
 
                     else
@@ -159,8 +152,39 @@ namespace Sistema_de_Biblioteca
 
         }
 
-        public void Emprestimo(string Titulo)
+        public void Emprestimo()
         {
+            Console.WriteLine($"Informe o título do livro:");
+            resp2 = Console.ReadLine()!;
+
+            livroBuscado = livroLista?.Find(x => x.titulo == this.resp2);
+
+
+            // Livro livroBuscadoExemplares = livroLista?.Find(x=> x.numeroExemplares > 0)!;
+
+            if (livroBuscado != null)
+            {
+
+                if (livroBuscado.numeroExemplares > 0)
+                {
+                    livroBuscado.numeroExemplares--;
+                    Console.WriteLine($"Aqui está seu livro '{livroBuscado.titulo}'. Não se esqueça de realizar a devolução do produto no prazo!");
+                }
+
+                else
+                {
+                    Console.WriteLine($"Ops. Infelizmente não é possível realizar um empréstimo do livro '{livroBuscado.titulo}'.");
+                }
+            }
+            else
+            {
+                Console.WriteLine($"Livro não encontrado.");
+                
+            }
+
+
+
+
 
         }
 

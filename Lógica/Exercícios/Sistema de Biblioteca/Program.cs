@@ -27,11 +27,11 @@ do
             break;
 
         case "2":
-            livro.Pesquisar(livro.titulo, livro.autor, livro.anoPublicacao);
+            livro.Pesquisar();
             break;
 
         case "3":
-            livro.Emprestimo(livro.titulo);
+            livro.Emprestimo();
             break;
 
         case "4":
