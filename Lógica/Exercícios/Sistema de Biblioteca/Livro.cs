@@ -126,13 +126,19 @@ namespace Sistema_de_Biblioteca
 
                     if (livroBuscado != null)
                     {
+                        // if(livroBuscado.anoPublicacao == resp2)
+                        // {
+
+                        
                         foreach (var item in livroLista)
                         {
+                            
                             Console.WriteLine(@$"
                     Livro: {item.titulo}
                     Autor: {item.autor}
                     Ano de publicação: {item.anoPublicacao}
                     Número de exemplares: {item.numeroExemplares}");
+                        // }
                         }
                     }
 
