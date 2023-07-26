@@ -1,8 +1,6 @@
 ﻿using Sistema_de_Biblioteca;
 
 Livro livro = new Livro();
-
-
 string escolha;
 
 do
@@ -19,7 +17,6 @@ do
 
 
     escolha = Console.ReadLine()!;
-
 
     switch (escolha)
     {
@@ -44,8 +41,8 @@ do
             break;
 
         case "0":
+            Console.WriteLine($"Serviços encerrados.");
             break;
-
 
         default:
             Console.WriteLine($"Valor inválido.");

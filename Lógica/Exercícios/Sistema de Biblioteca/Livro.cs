@@ -54,7 +54,7 @@ namespace Sistema_de_Biblioteca
 
 
 
-            livroLista.Add(new Livro(titulo, autor, anoPublicacao, numeroExemplares));
+            livroLista!.Add(new Livro(titulo, autor, anoPublicacao, numeroExemplares));
 
             Console.WriteLine($"\n'{titulo}' foi cadastrado com sucesso!");
 
@@ -112,7 +112,7 @@ namespace Sistema_de_Biblioteca
 
                         else
                         {
-                            Console.WriteLine($"Nenhum livro encontrado.");
+                            Console.WriteLine($"\nNenhum livro encontrado.");
                         }
                     }
 
@@ -127,7 +127,7 @@ namespace Sistema_de_Biblioteca
 
                         if (livroBuscado != null)
                         {
-                            foreach (Livro item in livroLista)
+                            foreach (Livro item in livroLista!)
                             {
                                 if (item.autor == livroBuscado.autor)
                                 {
@@ -138,7 +138,7 @@ namespace Sistema_de_Biblioteca
 
                         else
                         {
-                            Console.WriteLine($"Nenhum livro encontrado.");
+                            Console.WriteLine($"\nNenhum livro encontrado.");
                         }
                     }
 
@@ -150,19 +150,14 @@ namespace Sistema_de_Biblioteca
 
                         livroBuscado = livroLista?.Find(x => x.anoPublicacao == resp2)!;
 
+                        // Dentro da variável "livroBuscado" será armazenado o objeto da classe "Livro" que possui o ano de publicação informado pelo usuário (armazenado na variável "resp2").
 
                         if (livroBuscado != null)
                         {
-                            // if(livroBuscado.anoPublicacao == resp2)
-                            // {
-
-
-                            foreach (Livro item in livroLista)
+                            foreach (Livro item in livroLista!)
                             {
-
                                 if (item.anoPublicacao == livroBuscado.anoPublicacao)
                                 {
-
                                     imprimirLivro(item);
                                 }
                             }
@@ -170,12 +165,10 @@ namespace Sistema_de_Biblioteca
 
                         else
                         {
-                            Console.WriteLine($"Nenhum livro encontrado.");
+                            Console.WriteLine($"\nNenhum livro encontrado.");
                         }
                     }
             }
-
-
         }
 
         public void Emprestimo()
@@ -183,11 +176,10 @@ namespace Sistema_de_Biblioteca
             Console.WriteLine($"\nInforme o título do livro:");
             resp2 = Console.ReadLine()!;
 
-            livroBuscado = livroLista?.Find(x => x.titulo == this.resp2);
+            livroBuscado = livroLista?.Find(x => x.titulo == this.resp2)!;
 
             if (livroBuscado != null)
             {
-
                 if (livroBuscado.numeroExemplares > 0)
                 {
                     livroBuscado.numeroExemplares--;
@@ -208,7 +200,7 @@ namespace Sistema_de_Biblioteca
         public void Devolver()
         {
 
-            
+
             Console.WriteLine($"\nInforme o título do livro:");
             resp2 = Console.ReadLine()!;
 
@@ -219,20 +211,18 @@ namespace Sistema_de_Biblioteca
                 if (livroBuscado.numeroExemplares < livroBuscado.maximoExemplares)
                 {
                     livroBuscado.numeroExemplares++;
-                    Console.WriteLine($"Você devolveu o livro '{livroBuscado.titulo}' dentro do prazo, parabéns!");
+                    Console.WriteLine($"\nVocê devolveu o livro '{livroBuscado.titulo}' dentro do prazo, parabéns!");
                 }
-
-
 
                 else
                 {
-                    Console.WriteLine($"Impossível devolver este livro.");
+                    Console.WriteLine($"\nImpossível devolver este livro.");
 
                 }
             }
             else
             {
-                Console.WriteLine($"Este livro não existe em nosso sistema.");
+                Console.WriteLine($"\nEste livro não existe em nosso sistema.");
 
             }
         }
@@ -248,20 +238,17 @@ namespace Sistema_de_Biblioteca
 
         public void imprimirLivro()
         {
-            Console.WriteLine();
-            Console.WriteLine(@$"Livros cadastrados:");
+            Console.WriteLine($"\nLivros cadastrados:");
 
-            foreach (Livro item in livroLista)
+            foreach (Livro item in livroLista!)
             {
                 Console.WriteLine($@"
         Livro: {item.titulo}
         Autor: {item.autor}
         Ano de publicação: {item.anoPublicacao}
-        Número de exemplares: {item.numeroExemplares}
-        Exemplares Maximos: {item.maximoExemplares}");
-
+        Número de exemplares: {item.numeroExemplares}");
+        // Exemplares Maximos: {item.maximoExemplares} -- colocar abaixo do "Número de exemplares" caso queira testar os métodos "Emprestimo()" e "Devolver()"
             }
-
         }
     }
 }
