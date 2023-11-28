@@ -1,0 +1,15 @@
+C:\Users\fytho\OneDrive\Documentos\Github\Dev\Como enviar email\EnviaEmail\bin\Debug\net8.0\EnviaEmail.exe
+C:\Users\fytho\OneDrive\Documentos\Github\Dev\Como enviar email\EnviaEmail\bin\Debug\net8.0\EnviaEmail.deps.json
+C:\Users\fytho\OneDrive\Documentos\Github\Dev\Como enviar email\EnviaEmail\bin\Debug\net8.0\EnviaEmail.runtimeconfig.json
+C:\Users\fytho\OneDrive\Documentos\Github\Dev\Como enviar email\EnviaEmail\bin\Debug\net8.0\EnviaEmail.dll
+C:\Users\fytho\OneDrive\Documentos\Github\Dev\Como enviar email\EnviaEmail\bin\Debug\net8.0\EnviaEmail.pdb
+C:\Users\fytho\OneDrive\Documentos\Github\Dev\Como enviar email\EnviaEmail\obj\Debug\net8.0\EnviaEmail.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fytho\OneDrive\Documentos\Github\Dev\Como enviar email\EnviaEmail\obj\Debug\net8.0\EnviaEmail.AssemblyInfoInputs.cache
+C:\Users\fytho\OneDrive\Documentos\Github\Dev\Como enviar email\EnviaEmail\obj\Debug\net8.0\EnviaEmail.AssemblyInfo.cs
+C:\Users\fytho\OneDrive\Documentos\Github\Dev\Como enviar email\EnviaEmail\obj\Debug\net8.0\EnviaEmail.csproj.CoreCompileInputs.cache
+C:\Users\fytho\OneDrive\Documentos\Github\Dev\Como enviar email\EnviaEmail\obj\Debug\net8.0\EnviaEmail.sourcelink.json
+C:\Users\fytho\OneDrive\Documentos\Github\Dev\Como enviar email\EnviaEmail\obj\Debug\net8.0\EnviaEmail.dll
+C:\Users\fytho\OneDrive\Documentos\Github\Dev\Como enviar email\EnviaEmail\obj\Debug\net8.0\refint\EnviaEmail.dll
+C:\Users\fytho\OneDrive\Documentos\Github\Dev\Como enviar email\EnviaEmail\obj\Debug\net8.0\EnviaEmail.pdb
+C:\Users\fytho\OneDrive\Documentos\Github\Dev\Como enviar email\EnviaEmail\obj\Debug\net8.0\EnviaEmail.genruntimeconfig.cache
+C:\Users\fytho\OneDrive\Documentos\Github\Dev\Como enviar email\EnviaEmail\obj\Debug\net8.0\ref\EnviaEmail.dll
