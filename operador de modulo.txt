@@ -1,0 +1,10 @@
+let numero = 4.6;
+
+// Arredonda para o inteiro mais próximo
+let arredondado = Math.round(numero);
+
+// Calcula o resto da divisão original pelo número arredondado
+let resto = numero % 1;
+
+console.log('Número arredondado:', arredondado);  // Saída: 5
+console.log('Resto:', resto);  // Saída: 0.

@@ -1,0 +1,27 @@
+
+
+
+^ $: inicio e fim da expressão (opcionais)
+(): representam um grupo
+|: "e"
+[0-9]: ex: pegar numeros entre 0 e 9
+
+i: case sensitive (reconhece a letra independente de ser maiuscula ou minuscula)
+g: global
+
+[]: representa padrões
+| : equivalente ao operador &&
+
+metacaracteres:
+{
+    \d: só pega numerais
+    \s: só pega espaços
+    \b'caracter desejado: só pega caracteres (alfa-numericos). Ex: \bF
+}
+
+quantificadores:
+{
+    + : atribui caracteres seguidos como uma unica string
+    * : corresponde a 0 ou pelo menos uma string que corresponda (retorna correspondencias de 0 ou mais ocorrencias *indice*)
+    ? : retorna de 0 ou 1 ocorrencia *indice*
+}
