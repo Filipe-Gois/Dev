@@ -1,0 +1,39 @@
+Se você está desenvolvendo uma API .NET no Visual Studio e precisa configurar o acesso ao banco de dados no Azure, aqui estão os passos:
+
+Acesse o Azure Portal:
+
+Faça login no Azure Portal.
+Localize e acesse o recurso do Banco de Dados SQL Server:
+
+Encontre e acesse o recurso do Banco de Dados SQL Server associado à sua aplicação.
+Configurar as Regras de Firewall:
+
+Vá para a seção "Firewall e Configurações de VPN" dentro do recurso do Banco de Dados SQL Server.
+Adicione o endereço IP '123.4.56.789' à lista de endereços IP permitidos.
+Atualizar a Connection String na Aplicação .NET:
+
+No Visual Studio, abra o projeto da sua API .NET.
+Encontre a connection string que está sendo usada para se conectar ao banco de dados no Azure. Geralmente, isso está no arquivo appsettings.json ou no arquivo Web.config.
+Certifique-se de que a connection string está corretamente configurada para o seu banco de dados no Azure. Certifique-se de que o nome do servidor, nome do banco de dados, nome de usuário e senha estão corretos.
+Recompilar e Executar a Aplicação:
+
+Após fazer as alterações na connection string, recompile sua aplicação no Visual Studio.
+Execute a aplicação novamente e teste a conexão com a API usando o Swagger.
+Configurar o Firewall via Código (Opcional):
+
+Se preferir configurar as regras de firewall diretamente no código .NET, você pode fazer isso usando o serviço Microsoft.Data.SqlClient:
+
+csharp
+Copy code
+using (SqlConnection connection = new SqlConnection("sua_connection_string"))
+{
+    connection.Open();
+
+    using (SqlCommand command = new SqlCommand("EXEC sp_set_firewall_rule N'NomeDaRegra', '123.4.56.789', '123.4.56.789';", connection))
+    {
+        command.ExecuteNonQuery();
+    }
+}
+Certifique-se de que esta execução de código seja realizada uma vez para configurar a regra de firewall durante a inicialização do aplicativo.
+
+Lembre-se de que modificar as regras de firewall pode ter implicações de segurança, então certifique-se de aplicar as melhores práticas de segurança em suas configurações.
