@@ -1,0 +1,26 @@
+Dados: fatos em uma forma primária. Podem ser armazenados em algum meio. Ex: CPF, Nome, data.
+
+Informação: São os fatos organizados de maneira a produzir um significado -> dados colocados em contexto. Ex: Lista de clientes com seus números de CPF ordenados
+
+Metadados: "Dados sobre os dados". Efetuam a representação e identificação dos dados, garantidndo consistência e persistência. São mantidos no dicionário de dados.
+
+Banco de dados: coleção organizada de dados
+
+SGBD: Sistema Gerenciador de Banco de Dados. Coleção de softwares que permite aos usuários criarem e manterem um ou mais banco de dados. Ajudam a proteger o banco de dados e mante-los ao longo do tempo.
+
+
+Modelo Hierárquico 
+{
+    Dados são organizados de forma hierárquica,, com conjuntos de tipos de registros interconectados por meio de ligações.
+    Ligação: representa uma relação entre dois tipos de registros: pai e filho.
+    Acesso aos dados é sempre unidirecional: a partir do pai ao filho.
+
+    *Não muito utilizado*
+}
+
+Modelo Relacional 
+{
+    Dados são separados em entidades, conforme cada assunto e registrados como atributos dessas entidades.
+
+    Entidades se relacionam entre si e permitem que os dados sejam armazenados e recuperados de forma rápida e segura.
+}

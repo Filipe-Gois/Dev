@@ -1,0 +1,59 @@
+Modelo: estrutura que ajuda a comunicar os conceitos que estão na mente do projetista. Usado para tarefas como descrever, analisar, especificar e comunicar ideias
+
+Modelagem de Dados: processo de criação de um modelo de Dados para um sistema de informação.
+
+Modelos de Dados
+{
+    Hierárquico
+    Rede
+    RELACIONAL
+    Orientado a Objeto
+    Não-Relacional
+}
+
+Modelo Relacional
+{
+    Dados organizados em coleções de tabelas bidimensionais
+}
+
+Componentes de um Banco de Dados Relacional
+{
+    Tabela: estrutura básica de armazenamento no SGBDR(sistema gerenciador de banco de dados relacional). Armazena todos os dados necessários sobre algo do mundo real.
+
+    Tupla: ou linha/registro, representa todos os dados requeridos por uma determinada ocorrência de entidade em particular.
+
+    Coluna: Unidade que armazena um tipo específico de dao (valor), ou não armazena nada, com valor nulo.
+
+    Relacionamento: Associação entre as entidades (tabelas), conectadas por chaves primárias e chaves estrangeiras.
+
+    Primary Key: coluna(atributo) que identifica um registro de forma exclusiva na tabela. Ex: o cpf de um cliente.
+
+    Foreing Key: coluna que define como as tabelas se relacionam umas com as outras. Uma FK se refere a uma PK
+}
+
+MER (Modelo Entidade-Relacionamento)
+{
+    Cria um diagrama entidade-Relacionamento a partir das especificações do negócio ou narrativas do usuário. Permite ilustrar as entidades em um negócio e também relacionamentos entre elas.
+}
+
+Componentes do MER
+{
+    Entidade: Algo significativo, na qual devemos possuir informações
+
+    Atributo: Algo que descreve ou qualifica uma entidade. A entidade Cliente possui atributos que descrevem seu nome, endereço, etc.
+
+    Relacionamento: Associação nomeada entre entidades. Ex: clientes podem estar associados a pedidos.
+} 
+
+Convensções para modelagem de entidades, relacionamentos e atributos
+{
+    Entidade: Nome único, singular, caixa alta
+
+    Atributos: nome no singular, caixa baixa, atributos obrigatorios marcados com *, identificador único marcado com #
+
+    Relacionamentos: nome identificador(verbo),opcionalidade("deve ser" ou "pode ser"), grau de cardinalidade("um e apenas um" ou "um ou mais")
+
+    Cardinalidade:  Indica quantos objetos de uma determinada entidade estão conectados a outra.
+
+    Identificador único (UID): qualquer combinação de atributos ou relacionamentos usados para distinguir ocorrências de uma entidade. Cada uma deve ser exclusiva!
+}
