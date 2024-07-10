@@ -1,0 +1,63 @@
+@use "../base/variables" as variables
+
+@mixin formater-global()
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+@mixin flex-center()
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin container-style()
+    height: 100vh
+    width: 100vw
+    @include flex-center()
+
+@mixin grid-style()
+    width: 90%
+    height: 90%
+
+@mixin content-style()
+    height: 100%
+    gap: 10px
+    @include flex-center()
+
+@mixin div-style()
+    @include flex-center()
+    flex-direction: column
+    border: 2px solid variables.$black-color
+    border-radius: 10px
+    width: 40%
+    height: 100%
+    gap: 25px
+
+@mixin button-style($background:variables.$primary-color, $color: variables.$white-color)
+    background-color: $background
+    border: none
+    border-radius: 5px
+    color: #fff
+    cursor: pointer
+    font-size: 16px
+    padding: 10px 30px
+    width: 20%
+    height: 40px
+    align-self: center
+
+@mixin curso-style($background: variables.$gray-color-v2)
+    width: 80%
+    padding: 20px
+    border-radius: 15px
+    background-color: $background
+    border: 4px solid variables.$gray-color
+    @include flex-center()
+
+    cursor: pointer
+
+    // background-color: $background
+
+@mixin curso-destacado-style()
+    &.curso1
+        border-color: variables.$primary-color
+        background-color: variables.$white-color

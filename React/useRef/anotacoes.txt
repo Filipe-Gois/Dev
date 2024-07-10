@@ -1,0 +1,8 @@
+usos:
+1)nao re-renderiza o componente ao atualizar o valor
+2) referencia de elementos do DOM
+{
+    ao atribuir o ref a um componente html, a variavel vira um elemento do dom *mesma coisa que dar um getelementbyid no js puro*
+}
+
+3) salvar a referencia do valor anterior 

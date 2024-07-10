@@ -1,0 +1,1 @@
+se for usar js puro no html: colocar o script no final do body ou adicionar a propriedade "defer"

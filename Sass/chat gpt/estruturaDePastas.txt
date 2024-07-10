@@ -1,0 +1,73 @@
+Estrutura de Arquivos e Pastas
+Vamos organizar nosso projeto Sass de acordo com a metodologia de arquitetura conhecida como "7-1 pattern", que divide o Sass em 7 pastas mais um arquivo principal.
+
+/assets
+  /css
+    main.css
+  /js
+    index.js
+  /sass
+    /abstracts
+      _variables.sass
+      _mixins.sass
+      _functions.sass
+      _placeholders.sass
+    /base
+      _reset.sass
+      _typography.sass
+      _base.sass
+    /components
+      _buttons.sass
+      _cards.sass
+    /layout
+      _header.sass
+      _footer.sass
+      _grid.sass
+      _sidebar.sass
+    /pages
+      _home.sass
+      _about.sass
+    /themes
+      _theme.sass
+    /vendors
+      _bootstrap.sass
+    main.sass
+index.html
+
+Explicação
+/abstracts: Contém variáveis, mixins, funções e placeholders. Estes são elementos utilitários que serão usados em todo o projeto.
+/base: Define os estilos base do projeto, como reset de CSS, tipografia e estilos gerais de corpo.
+/components: Contém estilos para componentes específicos, como botões e cartões.
+/layout: Define a estrutura do layout, incluindo cabeçalho, rodapé, grade e barra lateral.
+/pages: Contém estilos específicos para páginas individuais, como a página inicial e a página "sobre".
+/themes: Define temas específicos que podem ser aplicados ao site.
+/vendors: Contém estilos de bibliotecas de terceiros, como Bootstrap.
+main.scss: Importa todos os outros arquivos Sass.
+
+
+*placeholders*
+{
+    Os placeholders em Sass são seletores que permitem você definir conjuntos de regras CSS que podem ser reutilizados em todo o seu código sem serem diretamente compilados para o CSS final, a menos que sejam estendidos por outros seletores. Eles são criados usando o símbolo % seguido do nome do placeholder.
+
+    Vantagens dos Placeholders
+{
+Reutilização de Código: Você pode definir um conjunto de estilos uma vez e aplicá-lo a vários seletores sem duplicar o código.
+CSS Mais Limpo: Placeholders não geram código CSS por conta própria, o que significa que não há regras CSS desnecessárias no arquivo final.
+Organização: Facilita a manutenção e organização dos estilos.
+}
+
+Como os Placeholders Funcionam
+{
+Os placeholders funcionam de maneira semelhante às classes e IDs, mas com uma diferença crucial: eles não aparecem no CSS final a menos que sejam estendidos (@extend) por outros seletores. Isso significa que você pode definir estilos uma vez e aplicá-los em vários lugares sem gerar CSS redundante.
+}
+
+Comparação com Mixins
+{
+Os placeholders são frequentemente comparados com os mixins. Ambos são usados para reutilizar estilos, mas têm diferenças importantes:
+
+Placeholders (%): Usados com @extend, não geram CSS por si próprios. Úteis para compartilhamento de estilos sem criar duplicação.
+Mixins (@mixin): Incluídos diretamente no CSS onde são chamados com @include, podem aceitar argumentos e gerar CSS cada vez que são incluídos.
+}
+
+
+}

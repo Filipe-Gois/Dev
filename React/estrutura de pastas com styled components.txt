@@ -1,0 +1,43 @@
+my-react-app/
+├── node_modules/
+├── public/
+│   ├── index.html
+│   └── ...
+├── src/
+│   ├── assets/
+│   │   ├── images/
+│   │   └── styles/
+│   ├── components/
+│   │   ├── Button/
+│   │   │   ├── Button.js
+│   │   │   ├── Button.styles.js
+│   │   │   └── index.js
+│   │   ├── Header/
+│   │   │   ├── Header.js
+│   │   │   ├── Header.styles.js
+│   │   │   └── index.js
+│   │   └── ...
+│   ├── hooks/
+│   │   └── useCustomHook.js
+│   ├── pages/
+│   │   ├── Home/
+│   │   │   ├── Home.js
+│   │   │   ├── Home.styles.js
+│   │   │   └── index.js
+│   │   └── About/
+│   │       ├── About.js
+│   │       ├── About.styles.js
+│   │       └── index.js
+│   ├── services/
+│   │   └── api.js
+│   ├── utils/
+│   │   └── helpers.js
+│   ├── App.js
+│   ├── index.js
+│   └── theme/
+│       ├── GlobalStyles.js
+│       └── theme.js
+├── .gitignore
+├── package.json
+├── README.md
+└── yarn.lock

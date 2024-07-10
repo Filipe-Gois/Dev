@@ -1,0 +1,1 @@
+todas as variaveis que forem ser usadas devem ser declaradas

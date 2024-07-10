@@ -1,0 +1,10 @@
+"use strict";
+let nValor;
+let sValor = "20";
+let valor;
+valor = 10;
+nValor = valor;
+console.log(valor);
+nValor += sValor;
+console.log(nValor);
+console.log(Number.parseFloat(sValor));

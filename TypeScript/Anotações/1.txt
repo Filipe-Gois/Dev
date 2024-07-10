@@ -1,0 +1,224 @@
+tsc --init      cria um arquivo de configuração para o ts
+
+tsc -w          compilação automática
+
+como tipar: 
+{
+    const x: number = 10;
+
+    adicionar ":" depois do nome da variavel e colocar o tipo de dado 
+
+
+tipos de dados:
+{
+ *nao coloquei o resto pq vc já sabe, Filipe do futuro.*
+    criando arrays:
+    {
+        com annotation: const myNumbers: number[] = [1,2,3,4]
+    }
+
+    tuple:
+    {
+        é quando vc define cada item que vai no array em especifico
+        let myTuple: [number, string, string[]];
+    }
+    
+    objects  literals ou array de chaves e valores:
+    {
+
+    const user: { id: number; name: string; isDoctor: boolean } = {
+        id: 123,
+        name: "John Doe",
+        isDoctor: true,
+    };
+
+    }
+
+    union types:
+    {
+        let id: number | string | boolean | number[] = [1, 2];
+
+        indica quais tipos de dados podem ser atribuidos a essa variavel.
+
+    }
+
+    type alias: 
+    {
+        type myIdType = number | string;
+
+        const userId: myIdType = 1
+
+
+        //ao inves de colocar todo o codigo da linha 39, dá p criar uma tipagem personalizada "alias"
+    }
+
+    enum: 
+    {
+        enumera uma coleção
+
+        enum Size {
+            P = "Small",
+            M = "Medium",
+            G = "Large"
+                  }
+
+        const camisa = {
+         name: "Sla",
+         size: Size.M,
+                       }
+
+        console.log(camisa)
+    }
+
+    literal types:
+    {
+        let teste: "asdasd" | "1"
+
+        teste = "1"
+
+        //a variavel teste só pode receber os valores "asdasd" ou "1"
+    }
+}
+
+
+}
+
+inferencia e annotation
+{
+    são maneiras de definir um valor com um tipo
+    *maioria prefere inferencia pq usa menos codigo*
+
+    inferencia: 
+    {
+        let y = 12
+    }
+    annotation:
+    {
+        let x: number = 1230;
+        *sempre colocar o tipo de dado em minusculo, pois em Pascal case é o objeto, não o tipo do dado*
+
+        usado em parametros de funções e tlvz em interfaces
+    }
+}
+
+
+funções:
+{
+    tipar parametros:
+    {
+    const soma = (a: number, b: number) => {
+     return a + b;
+    };
+    }
+
+    tipar retorno:
+    {
+        const sayHello = (name: string): string => {
+         return `Hello,` + name;
+        };
+
+        const logger = (msg: string): void => console.log(msg);
+
+        // ?: indica que o parametro é opcional
+        const greeting = (name: string, greet?: string): void =>
+        console.log(greet ? `Olá, ${greet} ${name}` : `Olá, ${name}`);
+
+        greeting("fefe", "dkasjfh")
+
+    }
+}
+
+interface:
+{
+    forma de padronizar estruturas
+    *interface é uma especie de contrato, que diz que o objeto deve ter essas propriedades e tipos de dados*
+interface MathFunctionParameters {
+  n1: number;
+  n2: number;
+}
+
+const sumNums = (nums: MathFunctionParameters): number => {
+  let { n1 } = nums;
+  let { n2 } = nums;
+  return n1 + n2;
+};
+
+console.log(sumNums({ n1: 10, n2: 28 }));
+
+const mutipleNums = (numeros: MathFunctionParameters): number =>
+  numeros.n1 * numeros.n2;
+
+console.log(mutipleNums({ n1: 10, n2: 10 }));
+
+const numbers: MathFunctionParameters = {
+  n1: 12,
+  n2: 12,
+};
+
+console.log(mutipleNums(numbers))
+}
+
+narrowing:
+{
+//checagem de tipos
+
+const doSomething = (info: number | boolean): void =>
+  console.log(
+    typeof info === "number"
+      ? `O número é ${info}`
+      : `Não foi passado um número!`
+  );
+
+  doSomething(true)
+  }
+
+
+  generics:
+  {
+//USAR GENERICS AO INVES DE ANY **NAO SE USA ANY**
+
+const showArrayItems = <T>(arr: T[]) =>
+  arr.forEach((item) => console.log(`Item: ${item}`));
+
+showArrayItems([1, 2, 3, 4]);
+  }
+  
+
+classes: 
+{
+
+class User {
+  id;
+  name;
+  role;
+
+  constructor(id: number, name: string, role: string) {
+    this.id = id;
+    this.name = name;
+    this.role = role;
+  }
+
+  //criar metodos para a classe
+
+  showUserName(): void {
+    console.log(`O nome do usuaro é: ${this.name}`);
+  }
+
+  showUserRole(canShow: boolean): void {
+    console.log(
+      canShow
+        ? `A role do usuaro é: ${this.role}`
+        : "Não foi possível ver o valor"
+    );
+  }
+}
+
+const Zeca = new User(123, "Zeca", "Adm");
+
+console.log(Zeca);
+
+Zeca.showUserName();
+
+Zeca.showUserRole(true);
+
+}

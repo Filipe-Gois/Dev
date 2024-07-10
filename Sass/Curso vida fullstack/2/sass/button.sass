@@ -1,0 +1,41 @@
+@use "variables"
+
+@mixin button-style($background, $color)
+    background-color: $background
+    color: $color
+    &:hover
+        //funçoes nativas
+        background-color: darken($background, 50%)
+        background-color: desaturate($background, 50%)
+        background-color: mix($background, variables.$color-blue)
+
+.btn
+    width: 200px
+    height: 200px
+    padding: 10px 0
+    background: none
+    border: none
+    border-radius: 10px
+
+    &.btn-laranja
+        @include button-style(variables.$orange, variables.$secondary)
+
+    &.btn-roxo
+        @include button-style(variables.$color-roxo, variables.$secondary)
+
+    &.btn-azul
+        @include button-style(variables.$color-blue, variables.$secondary )
+
+    // &.btn-laranja
+    //     background-color: $orange
+
+    //ou
+
+// .btn-laranja
+//     @include button-style($orange, $secondary)
+
+// .btn-roxo
+//     @include button-style($color-roxo, $secondary)
+
+// .btn-azul
+//     @include button-style($color-blue, $secondary )

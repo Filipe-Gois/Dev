@@ -1,0 +1,128 @@
+comando para compilar o arquivo .sass:
+{
+   *arquivo de entrada : arquivo de saída*
+
+    cria um arquivo style.css a partir do style.sass
+    sass style.sass : style.css
+}
+fazer com que o css seja alterado ao mexer no arquivo sass:
+{
+    sass -w sass/style.sass:css/style.css 
+
+    
+}
+fazer com que todos os css sejam alterados no projeto:
+{
+    sass -w .
+}
+
+Nesting: dá pra colocar tags dentro de outras tags no .sass, ao invés de só colocar propriedades css
+{
+Ex:
+{
+    body
+        p
+            color: #f00
+}
+
+pseudo-classes com nesting:
+{
+    p
+    background-color: $primary
+    &:hover
+        background-color: $secondary
+}
+
+}
+
+herança:
+{
+    tradicional:
+    {.btn
+    width: 200px
+    height: 200px
+    padding: 10px 0
+    background: none
+    border: none
+    border-radius: 10px
+    &.btn-laranja
+        background-color: #FFC107
+}
+
+    extend (metodo do sass)
+    {
+.btn
+    width: 200px
+    height: 200px
+    padding: 10px 0
+    background: none
+    border: none
+    border-radius: 10px
+
+.btn-laranja
+    @extend .btn
+    background-color: #FFC107
+    }
+}
+
+Mixin:
+{
+    retorna estilos css
+
+    Um mixin no Sass é uma funcionalidade que permite definir blocos de código CSS reutilizáveis. Os mixins são especialmente úteis para evitar repetição de código e para aplicar conjuntos de estilos que precisam ser usados em várias partes do seu CSS. Eles podem aceitar argumentos, o que os torna ainda mais flexíveis.
+
+    definindo mixin:
+    {
+        @mixin box-shadow($x, $y, $blur, $color) {
+        -webkit-box-shadow: $x $y $blur $color;
+        -moz-box-shadow: $x $y $blur $color;
+        box-shadow: $x $y $blur $color;
+    }
+
+    Usando um mixin:
+    {
+        .button {
+        @include box-shadow(2px, 2px, 5px, rgba(0, 0, 0, 0.3));
+        padding: 10px 20px;
+        background-color: #f00;
+        color: #fff;
+    }
+
+
+    Mixin com argumentos padrão:
+    {
+        @mixin box-shadow($x: 0, $y: 0, $blur: 5px, $color: rgba(0, 0, 0, 0.5)) {
+        -webkit-box-shadow: $x $y $blur $color;
+        -moz-box-shadow: $x $y $blur $color;
+        box-shadow: $x $y $blur $color;
+        }
+
+        .card {
+        @include box-shadow;
+        padding: 15px;
+        background-color: white;
+    }
+
+    }
+
+    }
+    }
+}
+
+funcoes:
+{
+    retorna um valor, cores, string.
+
+    2 tipos de funções: nativas e criadas pelo usuário
+
+
+}
+
+minify:
+{
+    *pegar todo o codigo em varias linhas e resumi-lo em apenas uma*
+
+    sass *caminho do arquivo sass*:*caminho do arquivo css* -s compressed
+
+    fazer isso para o css ficar menos pesado
+}
