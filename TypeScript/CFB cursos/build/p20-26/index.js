@@ -38,6 +38,7 @@ class Conta {
     }
 }
 class PessoaFisica extends Conta {
+    calculo = 10;
     cpf;
     constructor(titular, cpf) {
         super(titular);

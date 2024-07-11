@@ -1,9 +1,11 @@
 //herança: quando uma classe herda características de outra classe
 //se a classe filho n tiver um construtor, ela vai usar o construtor da classe pai
 //super:refere-se à classe pai
-
-class Conta {
-  protected numero: number;
+//metodo get: colocar a palavra get na frente (o metodo é transformado em uma propriedade ao ser acessado)
+//metdo set: colocar a palavra set na frente
+//classe abstrata: N permite instancias de obj. A classe abstract só serve de base para outras classes
+abstract class Conta {
+  private readonly numero: number;
   protected titular: string;
   private saldoConta: number;
   constructor(titular: string) {
@@ -20,8 +22,12 @@ class Conta {
     console.log(`Titular: ${this.titular}. Número da conta: ${this.numero}`);
   }
 
-  public saldo(): number {
+  get saldo(): number {
     return this.saldoConta;
+  }
+
+  set saldo(valor: number) {
+    this.saldoConta = valor;
   }
 
   protected deposito(valor: number) {
@@ -40,8 +46,12 @@ class Conta {
     }
   }
 }
+interface Tributos {
+  calculo: number;
+}
 
-class PessoaFisica extends Conta {
+class PessoaFisica extends Conta implements Tributos {
+  calculo = 10;
   cpf: number;
   constructor(titular: string, cpf: number) {
     super(titular);
@@ -105,4 +115,5 @@ const contaPj1 = new PessoaJuridica("Filipe JURIDICO", 72591720178);
 contaPj1.deposito(10000);
 contaPj1.saque(5000);
 contaPj1.saque(5000);
-console.log(contaPj1.saldo());
+contaPj1.saldo = 250;
+console.log(contaPj1.saldo);
