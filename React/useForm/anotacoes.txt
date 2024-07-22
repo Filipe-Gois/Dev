@@ -1,0 +1,8 @@
+register: "registrar o input"
+<input {...register("name")}  />
+
+handleSubmit:
+
+<button onClick={() => handleSubmit(unSubmit)()}></button>
+
+https://www.youtube.com/watch?v=qH272VSWje4
