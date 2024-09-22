@@ -1,0 +1,29 @@
+public:
+{
+    possui as pastas fonts, assets, favicon.ico, etc
+}
+
+src:
+{
+
+@types: tipagem para tipos globais do projeto
+{
+    environment.d.ts:arquivo para tipagem de variaveis de ambiente 
+}
+
+    app: responsavel pelo roteamento da aplicacao (o arquivo "page" de cada pasta aqui dentro se refere a rota)
+    components: pasta com subpastas dos componentes da aplicacao
+    hooks: pasta para modularizar o codigo, removendo a logica do componente e separando-a em um arquivo a parte
+    constants
+    contexts: contexto da aplicacao
+    functions:
+    service: pasta http com as requisicoes e 
+    {
+        api.ts
+    }
+
+    styles:estilos globais da aplicacao
+    utils:  
+
+
+}

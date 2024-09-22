@@ -1,0 +1,1 @@
+pseudo classes e elementos: *nome do pseudo elemento/classe*: *nome e valor da propriedade*
